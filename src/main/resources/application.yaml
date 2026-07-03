@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: demo
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/car_rental
+    username: root
+    password: Nikitawd@99
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.orm.jdbc.bind: TRACE
+
+security:
+  jwt:
+    secret: "saiofalvkasfbehwqpofhjashofjaswfpojasfvbafophfifonfoshjfwefjjfslajfsahfoshffasnbash"
